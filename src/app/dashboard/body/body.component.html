@@ -1,0 +1,142 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 p-2">
+            <div class="card">
+                <div class="d-flex justify-content-between">
+                    <fa-icon [icon]="faUserFriends"></fa-icon>
+                    <div class="text-right pt-5 pr-3">
+                        <h5>Utilisateurs</h5>
+                        <h1 style="font-size: 60px; color: #187B5D;">19,500</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 p-2">
+            <div class="card">
+                <div class="d-flex justify-content-between">
+                    <fa-icon [icon]="faSignal"></fa-icon>
+                    <div class="text-right pt-5 pr-3">
+                        <h5>Visiteurs</h5>
+                        <h1 style="font-size: 60px; color: #187B5D;">59,000</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5 pt-5">
+        <div class="col-lg-6 col-sm-12 ">
+            <h3 class="text-black text-center mb-3">Stock</h3>
+            <table class="table table1 text-center">
+                <thead>
+                    <tr>
+                        <th class="font-weight-normal">ID</th>
+                        <th class="font-weight-normal">Nom</th>
+                        <th class="font-weight-normal">Prix</th>
+                        <th class="font-weight-normal">Prix aprés promotion</th>
+                        <th class="font-weight-normal">Statut</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="font-weight-normal">1</th>
+                        <td>Produit 1</td>
+                        <td>0.5DT</td>
+                        <td>0.250DT</td>
+                        <td><a href="#"> Modifier </a></td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-normal">1</th>
+                        <td>Produit 1</td>
+                        <td>0.5DT</td>
+                        <td>0.250DT</td>
+                        <td><a href="#"> Modifier </a></td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-normal">1</th>
+                        <td>Produit 1</td>
+                        <td>0.5DT</td>
+                        <td>0.250DT</td>
+                        <td><a href="#"> Modifier </a></td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-normal">1</th>
+                        <td>Produit 1</td>
+                        <td>0.5DT</td>
+                        <td>0.250DT</td>
+                        <td><a href="#"> Modifier </a></td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-normal">1</th>
+                        <td>Produit 1</td>
+                        <td>0.5DT</td>
+                        <td>0.250DT</td>
+                        <td><a href="#"> Modifier </a></td>
+                    </tr>
+                </tbody>
+            </table>
+                <div class="paginiator">
+                    <mat-paginator [length]="100"
+                                    [pageSize]="10"
+                                    [pageSizeOptions]="[5, 10, 25, 100]">
+                    </mat-paginator>
+                </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <h3 class="text-black text-center mb-3">Statut des achats</h3>
+            <table class="table table2 text-center">
+                <thead>
+                    <tr>
+                        <th class="font-weight-normal">ID</th>
+                        <th class="font-weight-normal">Nom</th>
+                        <th class="font-weight-normal">Prix</th>
+                        <th class="font-weight-normal">Prix aprés promotion</th>
+                        <th class="font-weight-normal">Statut</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="font-weight-normal">1</th>
+                        <td>Produit 1</td>
+                        <td>0.5DT</td>
+                        <td>0.250DT</td>
+                        <td><button class="btn btn-partenaire"> Modifier </button></td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-normal">1</th>
+                        <td>Produit 1</td>
+                        <td>0.5DT</td>
+                        <td>0.250DT</td>
+                        <td><button class="btn btn-stock"> Modifier </button></td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-normal">1</th>
+                        <td>Produit 1</td>
+                        <td>0.5DT</td>
+                        <td>0.250DT</td>
+                        <td><button class="btn btn-partenaire"> Modifier </button></td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-normal">1</th>
+                        <td>Produit 1</td>
+                        <td>0.5DT</td>
+                        <td>0.250DT</td>
+                        <td><button class="btn btn-stock"> Modifier </button></td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-normal">1</th>
+                        <td>Produit 1</td>
+                        <td>0.5DT</td>
+                        <td>0.250DT</td>
+                        <td><button class="btn btn-partenaire"> Modifier </button></td>
+                    </tr>
+                </tbody>
+            </table>
+                <div class="paginiator">
+                    <mat-paginator [length]="100"
+                                    [pageSize]="10"
+                                    [pageSizeOptions]="[5, 10, 25, 100]">
+                    </mat-paginator>
+                </div>
+        </div>
+    </div>
+</div>

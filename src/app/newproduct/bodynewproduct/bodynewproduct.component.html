@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="back mt-5">
+        <div class="row pt-5 pl-5">
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-5 col-md-10">
+                <form #f="ngForm" (ngSubmit)="save(f.value)">
+                    <div class="form-group">
+                        <label for="inputEmail4">Titre</label>
+                        <input #titre="ngModel" ngModel name="titre" id="titre" type="text" class="form-control" required>
+                        <div class="alert alert-danger" *ngIf="titre.touched && titre.invalid">
+                            le titre est nécessaire
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail4">Prix initial</label>
+                        <input #prix1="ngModel" ngModel name="prix1" id="prix1" type="number" class="form-control" required>
+                        <div class="alert alert-danger" *ngIf="prix1.touched && prix1.invalid">
+                            le prix initial est nécessaire
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail4">Prix aprés promotion</label>
+                        <input #prix2="ngModel" ngModel name="prix2" id="prix2" type="number" class="form-control" required>
+                        <div class="alert alert-danger" *ngIf="prix2.touched && prix2.invalid">
+                           <div *ngIf="prix2.errors?.required"> le prix aprés la promotion doit étre supérieur à 0 </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select #category="ngModel" ngModel id="category" name="category" class="form-control" required>
+                            <option value=""></option>
+                            <option *ngFor="let c of categories$ | async" [value]="c.$key">{{ c.name }}</option>
+                        </select>
+                        <div class="alert alert-danger" *ngIf="category.touched && category.invalid">
+                            la categorie est nécessaire
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail4">Image</label>
+                        <input #image="ngModel" ngModel name="image" id="imageUrl" type="text" class="form-control" required>
+                        <div class="alert alert-danger" *ngIf="image.touched && image.invalid">
+                            il faut insérer une image
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-5 col-md-10 pt-4 align-self-center">
+                <div class="card">
+                    <img class="card-img-top text-center" src="assets/farina.png">
+                    <div class="card-body">
+                        <h3 class="card-title"> Farina </h3>
+                        <p>Prix initial : 0.8dt</p>
+                        <p>Prix aprés promotion : 0.6dt</p>
+                    </div>
+                </div>
+                <form #f="ngForm" (ngSubmit)="save(f.value)">
+                    <div class="buttons">
+                        <button class="btn btn-partenaire">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

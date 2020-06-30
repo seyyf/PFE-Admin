@@ -1,0 +1,61 @@
+.back{
+    background-color: rgb(216, 216, 216);
+    border-radius: 10px;
+    height: 80vh;
+}
+
+.card{
+    width: 250px;
+    height: 300px;
+    box-shadow: 1px 2px 5px #999999;;
+}
+
+.card img{
+    width: 160px;
+    margin-left: 40px;
+} 
+
+.btn-partenaire{
+    border-radius: 4px;
+    background: #f2d349;
+    box-shadow: 1px 2px 5px #999999;
+    color: #1F2421;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    text-align: center;
+    margin: 30px 0px 0px;
+    width: 250px;
+}
+
+.btn-supprimer:hover, .btn-partenaire:hover{
+    transform: translateY(-2px);
+    box-shadow: 1px 3px 10px #999999;
+}
+
+@media only screen and (max-width: 992px) {
+    .back{
+        height: 150vh;
+    }
+    .card{
+        margin-left: 165px;
+    }
+    .buttons{
+        margin-left: 165px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card{
+        margin-left: 55px;
+    }
+    .buttons{
+        margin-left: 50px;
+    }
+    form{
+        padding-right: 40px;
+    }
+    .back{
+        height: 150vh;
+    }
+}

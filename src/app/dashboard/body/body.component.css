@@ -1,0 +1,67 @@
+fa-icon{
+    width: 500px;
+    color: #F2D349;
+    font-size: 120px;
+    padding-left: 80px;
+}
+
+.card{
+    box-shadow: 1px 2px 5px #999;
+    transition: all .4s;
+}
+
+@media only screen and (max-width: 992px) {
+    h1 {
+      font-size: 30px !important;
+    }
+    fa-icon{
+       font-size: 80px;
+       padding-left: 40px;
+    }
+}
+
+.card:hover{
+    box-shadow: 2px 3px 15px #999;
+    transform: translateY(-1px);
+}
+
+.table{
+    background-color: rgb(216, 216, 216);
+}
+
+.btn-partenaire{
+    border-radius: 4px;
+    background: #f2d349;
+    box-shadow: 1px 2px 5px #999999;
+    color: #1F2421;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    height: 25px;
+    text-align: center;
+    padding: 1px;
+    width: 100px;
+}
+
+.btn-stock{
+    border-radius: 4px;
+    background: crimson;
+    box-shadow: 1px 2px 5px #999999;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    height: 25px;
+    padding: 1px;
+    width: 100px;
+}
+
+.btn-partenaire:hover{
+    transform: translateY(-1px);
+    box-shadow: 1px 5px 10px #999999;
+}
+
+.btn-stock:hover{
+    transform: translateY(-1px);
+    box-shadow: 1px 5px 10px #999999;
+}
